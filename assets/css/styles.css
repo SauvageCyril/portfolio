@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Srisakdi');
+
 h1
 {
   text-align: center !important;
+  margin: 100px;
+  font-family: 'Srisakdi', cursive;
+  font-size: 5rem;
 }
 
 body
 {
-  background-color: red;
+  background-color: lightgrey;
 }
