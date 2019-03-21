@@ -20,6 +20,20 @@ body
   margin-left: 10px;
 }
 
+.card:hover
+{
+  transform: scale(1.01);
+}
+
+.card-title
+{
+  text-align: center;
+}
+
+.card-text
+{
+  text-align: center;
+}
 
 
 
