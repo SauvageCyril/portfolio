@@ -11,7 +11,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
-<body>
+<body id="body">
   <section>
     <div class="container" id="titre">
       <h1>Mon Portfolio</h1>
@@ -20,7 +20,7 @@
 
   <section>
     <div class="card-group">
-  <div class="card">
+  <div class="card" onmouseover="mafonction()" onmouseout="autre()" id="card">
     <a href="https://sauvagecyril.github.io/Les_clefs_de_rochefort/"><img src="assets/img/un.png" class="card-img-top" alt="..."></a>
     <div class="card-body">
       <h5 class="card-title">Site Associatif</h5>
@@ -46,6 +46,18 @@
   </div>
 </div>
   </section>
+<script language="javascript">
+        function mafonction() {
+            element = document.getElementById('body');
+            element.style.backgroundImage = "url('assets/img/un.png')";
+        }
+        function autre() {
+            element = document.getElementById('body');
+            element.style.backgroundColor = "lightgrey";
+            element.style.backgroundImage = "none";
+        }
+
+    </script>
 
 </body>
 </html>
