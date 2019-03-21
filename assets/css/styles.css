@@ -2,6 +2,7 @@
 
 h1
 {
+  position: relative;
   text-align: center !important;
   margin: 100px;
   font-family: 'Srisakdi', cursive;
@@ -17,4 +18,14 @@ body
 {
   margin-right: 10px;
   margin-left: 10px;
+}
+
+
+
+
+/*Petit ecran*/
+@media only screen and (max-width: 762px) {
+h1 {
+font-size: 3em;
+}
 }
