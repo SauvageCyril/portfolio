@@ -28,7 +28,7 @@
       <p class="card-text"><small class="text-muted">Les Clefs de Rochefort</small></p>
     </div>
   </div>
-  <div class="card">
+  <div class="card" id="card2">
     <img src="http://placehold.it/350x150" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
@@ -36,7 +36,7 @@
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
     </div>
   </div>
-  <div class="card">
+  <div class="card" id="card3">
     <img src="http://placehold.it/350x150" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
@@ -50,11 +50,19 @@
         function mafonction() {
             element = document.getElementById('body');
             element.style.backgroundImage = "url('assets/img/un.png')";
+            element = document.getElementById('card2');
+            element.style.visibility = "hidden";
+            element = document.getElementById('card3');
+            element.style.visibility = "hidden";
         }
         function autre() {
             element = document.getElementById('body');
             element.style.backgroundColor = "lightgrey";
             element.style.backgroundImage = "none";
+            element = document.getElementById('card2');
+            element.style.visibility = "inherit";
+            element = document.getElementById('card3');
+            element.style.visibility = "inherit";
         }
 
     </script>
